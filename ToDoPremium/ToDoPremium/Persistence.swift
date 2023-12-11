@@ -1,9 +1,4 @@
-//
-//  Persistence.swift
-//  ToDoPremium
-//
-//  Created by Joe Sand on 12/11/23.
-//
+
 
 import CoreData
 
