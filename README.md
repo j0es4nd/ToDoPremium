@@ -21,7 +21,7 @@ Must have features:
   * Monthly calender layout showing tasks on due date
   * Days with tasks highlighted
 
-4.Data Persistence
+3.Data Persistence
 
 Nice to have features:
 
