@@ -12,7 +12,7 @@ struct CalendarView: View {
                 .padding()
 
             List(calendarViewModel.tasksForSelectedDate) { task in
-                TaskRow(task: task)
+                TaskRow(task: task, taskViewModel: TaskViewModel())
             }
         }
         .onChange(of: calendarViewModel.selectedDate) { _ in

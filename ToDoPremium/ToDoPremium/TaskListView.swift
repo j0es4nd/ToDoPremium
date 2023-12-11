@@ -8,7 +8,7 @@ struct TaskListView: View {
         NavigationView {
             List {
                 ForEach(taskViewModel.tasks) { task in
-                    TaskRow(task: task)
+                    TaskRow(task: task, taskViewModel: taskViewModel)
                         .onTapGesture {
                             // Implement the action for task selection or editing
                         }

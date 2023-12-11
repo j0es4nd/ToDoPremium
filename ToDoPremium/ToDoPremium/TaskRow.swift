@@ -3,6 +3,7 @@ import SwiftUI
 
 struct TaskRow: View {
     var task: Task
+    var taskViewModel: TaskViewModel
 
     var body: some View {
         HStack {
@@ -10,7 +11,8 @@ struct TaskRow: View {
             Image(systemName: task.isCompleted ? "checkmark.circle.fill" : "circle")
                 .foregroundColor(task.isCompleted ? .green : .gray)
                 .onTapGesture {
-                    // Action to toggle task completion status
+                    // toggle task completion status
+                    taskViewModel.toggleIsCompleted(for: task)
                 }
 
             VStack(alignment: .leading) {
@@ -35,7 +37,7 @@ struct TaskRow: View {
 // Preview Provider
 struct TaskRow_Previews: PreviewProvider {
     static var previews: some View {
-        TaskRow(task: Task(title: "Sample Task", dueDate: Date()))
+        TaskRow(task: Task(title: "Sample Task", dueDate: Date()), taskViewModel: TaskViewModel())
             .previewLayout(.sizeThatFits)
     }
 }
