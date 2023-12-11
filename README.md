@@ -16,9 +16,11 @@ Must have features:
   * Shows a list of tasks with title and due date
   * Tasks can be checked off as completed
   * Tasks can be deleted
+
 2.Calender Integration
   * Monthly calender layout showing tasks on due date
   * Days with tasks highlighted
+
 4.Data Persistence
 
 Nice to have features:
